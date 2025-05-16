@@ -7,3 +7,8 @@ El token debe pertenecer a un usuario con los permisos bien definidos.
 Este docker-compose expone en http un nginx sirviendo un flask por detrás.
 
 Por tu cuenta lo metés en un reverse_proxy para darle https con otro nginx proxy que tengas.
+
+
+- Expone puerto 8182 del nginx para funcionar
+- en app/.env se configuran variables de entorno (token del WS y token de Jira)
+- - Al tener token no funciona con usuario y contraseña.
