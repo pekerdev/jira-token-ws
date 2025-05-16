@@ -11,6 +11,7 @@ services:
   nginx:
     image: nginx:stable
     container_name: nginx_proxy
+    restart: unless_stopped
     ports:
       - "8182:80"
     volumes:
